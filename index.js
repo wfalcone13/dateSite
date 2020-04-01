@@ -20,9 +20,10 @@ function today(){
   let day = d.getDay()
   let mon = d.getMonth()
   let year = d.getFullYear()
+  let num = d.getDate()
 
   let tag = document.getElementById('date')
-  tag.innerHTML = `Today is ${DAYS[day]},&nbsp  ${MONTH[mon]} ${year} `
+  tag.innerHTML = `Today is ${DAYS[day]},&nbsp  ${MONTH[mon]} ${num},&nbsp ${year} `
 }
 
 today()
